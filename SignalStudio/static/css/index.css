@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+
+/* header (button + title) */
+.page-container {
+  width: 100%;
+  min-height: 100%;
+  padding: 2%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  /* background-color: #EEE; */
+}
+.opt-bar {
+  padding: 1% 2% 0;
+  min-width: 80%;
+  height: 10%;
+  display: inline;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+}
+.title {
+  min-width: 20%;
+  max-height: 1vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: -3%;
+}
+.section-title {
+  min-width: 20%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.leftheader {
+  min-width: 20%;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  padding-top: 6%;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+.value {
+  text-align: right;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+#SROutput {
+  font-weight: bold;
+}
+#ampOutput{
+  font-weight: bold;
+}
+#freqOutput{
+  font-weight: bold;
+}
+button {
+  padding: 0.9em;
+  margin: 0.5em;
+  min-width: 100px;
+  cursor: pointer;
+  border: 5px #eee;
+  border-radius: 0.5rem;
+  background-color: #19345d;
+  color: white;
+  font-size: 0.9rem;
+}
+button:hover {
+  background-color: #192639;
+  color: #eee;
+}
+input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  font-size: 0.8rem;
+}
+.import-btn {
+  padding: 0.9em;
+  margin: 0.5em;
+  cursor: pointer;
+  border: 5px #eee;
+  border-radius: 0.5rem;
+  background-color: #19345d;
+  color: white;
+  font-size: 0.9rem;
+}
+.import-btn:hover {
+  background-color: #192639;
+  color: #eee;
+}
+
+/* signal frame styling */
+.mid-section {
+  height: 80vh;
+}
+.mid-section > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.left-options {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  width: 20vw;
+  height: 79vh;
+  /* background-color: #eee; */
+}
+.add-noise-section {
+  display: block;
+}
+.signalframe {
+  min-width: 60vw;
+  max-width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.right-options {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  width: 20vw;
+  height: 79vh;
+  /* background-color: #eee; */
+}
+#addedSignals {
+  /* display: block; */
+  width: 100%;
+  margin-top: 1.1rem;
+  border: none;
+  background-color: #d3d3d3;
+  color: #001330;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.3rem;
+  opacity: 0.8;
+  font-weight: bold;
+}
+#addedSignals:hover {
+  opacity: 1;
+}
+.myPlot {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+.optioncontainer {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.6rem;
+  /* margin-top: 0.6rem; */
+  background-color: #eee;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.9rem;
+}
+.slider {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  -webkit-appearance: none;
+  border-radius: 2.2rem;
+  width: 100%;
+  height: 1rem;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #19345d;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #19345d;
+  cursor: pointer;
+}
